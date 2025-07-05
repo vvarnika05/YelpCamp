@@ -24,7 +24,7 @@ const passport=require('passport')
 const LocalStrategy=require('passport-local')
 const User=require('./models/user')
 const MongoDBStore=require("connect-mongo")(session);
-const dbUrl='mongodb://127.0.0.1:27017/yelp-camp'
+const dbUrl=process.env.DB_url//'mongodb://127.0.0.1:27017/yelp-camp'
 //=process.env.DB_url
 //console.log("DB URL:", dbUrl);
 //mongodb://127.0.0.1:27017/yelp-camp
